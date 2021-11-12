@@ -51,7 +51,7 @@ class CardMaker:
         filename = card_info['name']
         filename = filename.replace(' ', '_')
         filename = filename.replace(':', '_')
-
+        filename = filename.replace('!', '_')
 
         src_image.save(out_dir + f"{filename}.png")
 
