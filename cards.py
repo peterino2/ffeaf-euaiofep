@@ -109,7 +109,7 @@ ranger_deck.add_card(
 misc_deck.add_card(
     "Contraption: Bomb Trap",
     "Detonates when an enemy steps onto this square or an adjacent square."
-    "\n\nDeals 2 + d4 damage to all characters in range."
+    "\n\nDeals 4 + d4 damage to all characters in range.\n\nAllies take half damage."
 )
 
 speedy_deck.add_card(
@@ -125,7 +125,7 @@ speedy_deck.add_card(
 
 speedy_deck.add_card(
     "Blur",
-    "Gain 1 + 1d2 [Blur]"
+    "Move 2, Gain 1 + 1d2 [Blur]"
 )
 
 misc_deck.add_card(
@@ -143,7 +143,7 @@ speedy_deck.add_card(
 
 tanky_deck.add_card(
     "Heavy Strike",
-    "Melee: Deal 4 + 1d6 damage"
+    "Melee: Deal 3 + 1d6 damage, ends turn."
 )
 
 tanky_deck.add_card(
