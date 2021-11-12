@@ -16,12 +16,24 @@ class CardMaker:
     def __init__(self):
         self.title_height = 48
         self.text_height = 36
+        self.text_height_smaller = 32
         self.title_font = ImageFont.truetype('Charter Regular.ttf', size=self.title_height)
         self.text_font = ImageFont.truetype('Charter Regular.ttf', size=self.text_height)
+        self.text_font_smaller = ImageFont.truetype('Charter Regular.ttf', size=self.text_height_smaller)
+        
+        self.text_fonts = {
+            "normal": (36, ImageFont.truetype('Charter Regular.ttf', size=36)),
+            "small": (30, ImageFont.truetype('Charter Regular.ttf', size=30)),
+        }
 
     def make_card_texture(self, card_info, out_dir=None):
         if not out_dir:
             out_dir = './'
+
+        text_height, text_font = self.text_fonts['normal']
+
+        if(card_info['line_count'] > 5):
+            text_height, text_font = self.text_fonts['small']
 
         src_image = Image.open(blanks[card_info['deck']])
         width, height = src_image.size
@@ -38,13 +50,12 @@ class CardMaker:
         desc_box_height = desc_box_endy - desc_box_starty
 
         desc_box_lmargin = 12
-
-        card_text_height = card_info['line_count'] * self.text_height
+        card_text_height = card_info['line_count'] * text_height
         assert card_text_height < desc_box_height, "Damn dude your description is really long"
             
         card_text_top_margin = (desc_box_height - card_text_height)/2
 
-        out_image.multiline_text((desc_box_lmargin + desc_box_startx, card_text_top_margin+desc_box_starty), card_info["text"], font=self.text_font, align='center', spacing=12)
+        out_image.multiline_text((desc_box_lmargin + desc_box_startx, card_text_top_margin+desc_box_starty), card_info["text"], font=text_font, align='center', spacing=12)
 
         os.makedirs(out_dir, exist_ok=True)
 
@@ -73,10 +84,6 @@ def test_make_aimed_shot():
     maker.make_card_texture(card_info, 'tests/');
 
 def test_make_all_cards():
-
-    for card in cards.card_infos:
-        print(card)
-    
     maker = CardMaker();
     maker.make_all_cards(cards.card_infos, 'playtest_cards/')
 

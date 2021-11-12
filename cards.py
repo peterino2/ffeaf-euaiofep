@@ -109,7 +109,7 @@ ranger_deck.add_card(
 misc_deck.add_card(
     "Contraption: Bomb Trap",
     "Detonates when an enemy steps onto this square or an adjacent square."
-    "\n\nDeals 4 + d4 damage to all characters in range.\n\nAllies take half damage."
+    "\n\nDeals 4 + d4 damage to all characters in range.\nAllies take half damage."
 )
 
 speedy_deck.add_card(
