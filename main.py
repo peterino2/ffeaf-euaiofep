@@ -1,6 +1,7 @@
 from PIL import Image, ImageFont, ImageDraw
 import os
 import cards
+import decks
 
 card_back = "cardback.png"
 
@@ -12,7 +13,8 @@ blanks = {
     "misc": "info_blank.png",
 }
 
-cardbase = "cardblanks\CardBlank.png"
+cardbase = "cardblanks/CardBlank.png"
+cardbase_nocost = "cardblanks/CardBlank_nocost.png"
 
 icons = {
     "ranger": "ranger_icon.png",
@@ -49,16 +51,14 @@ class CardMaker:
 
         return (text_width, text_height)
 
-    def make_card_texture(self, card_info, out_dir=None):
-        if not out_dir:
-            out_dir = './'
+    def make_card_texture(self, card_info):
 
         text_height, text_font = self.text_fonts['normal']
 
         if(card_info['line_count'] > 4):
             text_height, text_font = self.text_fonts['small']
 
-        src_image = Image.open(cardbase)
+        src_image = Image.open(cardbase) if 'costs' in card_info else Image.open(cardbase_nocost)
         width, height = src_image.size
 
         out_image = ImageDraw.Draw(src_image)
@@ -67,6 +67,19 @@ class CardMaker:
         out_image.text((width/2, self.title_height*1.5), card_info["name"], font=self.title_font, anchor='ms')
 
         # draw the costs.
+        if 'costs' in card_info:
+            energy = card_info["costs"]["energy"]
+            ap = card_info["costs"]["ap"]
+            fill_energy = "#aaffff" if energy > 0 else "#fff"
+            fill_ap = "#ffdd88" if ap > 0 else "#fff"
+
+            fill_energy = "#fff"
+            fill_ap = "#fff"
+
+            if ap <= 0: ap = '-'
+            if energy <= 0: energy = '-'
+            out_image.text((64, self.title_height*1.7), str(energy), font=self.title_font, anchor='ms', fill=fill_energy)
+            out_image.text((64, self.title_height*4.1), str(ap), font=self.title_font, anchor='ms', fill=fill_ap)
 
         # draw class icons
         icon_name = card_info['decks'][0]
@@ -76,7 +89,7 @@ class CardMaker:
         icon_image_new_data = []
 
         for pix in icon_image_data:
-            icon_image_new_data.append((pix[0], pix[1], pix[2], int(pix[3] * 0.15)))
+            icon_image_new_data.append((pix[0], pix[1], pix[2], int(pix[3] * 0.40)))
 
         icon_image.putdata(icon_image_new_data)
         icon_width, icon_height = icon_image.size
@@ -104,15 +117,26 @@ class CardMaker:
         src_image.paste(icon_image, icon_offset, icon_image)
 
         # draw the text
-        out_image.multiline_text((desc_box_lmargin + desc_box_startx, card_text_top_margin + desc_box_starty), card_info["text"], font=text_font, align='center', spacing=12)
+        out_image.multiline_text(
+            (desc_box_lmargin + desc_box_startx, card_text_top_margin + desc_box_starty),
+            card_info["text"], font=text_font, align='center', spacing=12
+        )
 
         # draw the flavor text
         if "flavour" in card_info:
             flavour_font_height, flavour_font = self.text_fonts['flavour']
             flavour_width, flavour_height = self.get_text_dimensions(card_info['flavour'], flavour_font)
-            flavour_offset = desc_box_endx - 12 - flavour_width, desc_box_endy - flavour_height*2 - 12
+            flavour_offset = desc_box_endx - 12 - flavour_width, desc_box_endy - flavour_height * 2 - 12
             out_image.multiline_text(flavour_offset, card_info['flavour'], font=flavour_font)
 
+
+
+        return src_image
+
+    def make_and_save_card(self, card_info, out_dir=None):
+        if not out_dir:
+            out_dir = './'
+        image = self.make_card_texture(card_info)
 
         # write out the card
 
@@ -122,31 +146,92 @@ class CardMaker:
         filename = filename.replace(' ', '_')
         filename = filename.replace(':', '_')
         filename = filename.replace('!', '_')
-
-        src_image.save(out_dir + f"{card_info['decks'][0]}_{filename}.png")
+        image.save(out_dir + f"{card_info['decks'][0]}_{filename}.png")
 
     def make_all_cards(self, cards, out_dir):
         """makes all cards for the list of cards it is assumed that all the cards have unique names
 
         """
         for card_info in cards:
-            self.make_card_texture(card_info, out_dir)
+            self.make_and_save_card(card_info, out_dir)
+
+    def make_deck(self, deck_list, deck_name, out_dir='test/', dimensions=(10, 7)):
+        # A decklist is a list of (card_info, count) tuples
+
+        card_count = 0
+        for card, count in deck_list:
+            card_count += count
+
+        if card_count > 69:
+            print(f"There are too many cards in this deck {deck_list}")
+            return
+
+        out_file = os.path.join(out_dir, deck_name + ".png")
+        os.makedirs(out_dir, exist_ok=True)
+        out_image = self.make_deck_texture(deck_list, deck_name, dimensions)
+        out_image.save(out_file)
+
+    def make_deck_texture(self, deck_list, deck_name, dimensions):
+
+        base_image = Image.open(cardbase)
+
+        card_width, card_height = base_image.size
+        root_width, root_height = (dimensions[0] * card_width, dimensions[1] * card_height)
+
+        assert (7380, 6909) == (root_width, root_height), "what? did the card dimensions change?"
+
+        root_image = Image.new('RGBA', (root_width, root_height), (0, 0, 0, 255))
+
+        card_index = 0
+        for card, count in deck_list:
+            card_tex = self.make_card_texture(card)
+            for i in range(count):
+                offset = (int((card_index % 10)*card_width), int((card_index/10))*card_height)
+                root_image.paste(card_tex, offset)
+                card_index += 1
+
+        card_index = 69
+        offset = (int((card_index % 10)*card_width), int((card_index/10))*card_height)
+        backimage = Image.open(card_back)
+        root_image.paste(backimage, offset)
+        return root_image
+
+_aimed_shot_test_card = {
+    "decks": ["ranger"],
+    "name": "Arrow Shot",
+    "text": "Ranged 4: deal 3 + 1d4 Damage\n",
+    "line_count": 1,
+    "costs":{
+        "energy": 2,
+        "ap": 2
+    },
+}
+
+def test_make_single_deck():
+    decklist = [(_aimed_shot_test_card, 69)] 
+    maker = CardMaker()
+    maker.make_deck(decklist, 'test_decklist', 'tests/')
 
 def test_make_aimed_shot():
-    card_info = {
-        "decks": ["ranger"],
-        "name": "Arrow Shot",
-        "text": "Ranged 4: deal 3 + 1d4 Damage\n",
-        "line_count": 1,
-    };
-    maker = CardMaker();
-    maker.make_card_texture(card_info, 'tests/');
+    card_info = _aimed_shot_test_card
+    maker = CardMaker()
+    maker.make_card_texture(card_info);
 
 def test_make_all_cards():
-    maker = CardMaker();
+    maker = CardMaker()
     maker.make_all_cards(cards.card_infos, 'playtest_cards/')
 
+def test_make_decks():
+    maker = CardMaker()
+    count = 0
+    for deck_name, deck in decks.main_deckset.decks.items():
+        count += 1
+        print(f"Assembling deck.. [{count} of {len(decks.main_deckset.decks)}]\r", end='')
+        maker.make_deck(deck, deck_name, 'playtest_decks')
+
+def test_make_playtest_deck():
+    maker = CardMaker()
+    maker.make_deck(decks.main_deckset.decks['testing_deck'], 'testing_deck', 'playtest_decks')
 
 if __name__ == "__main__":
-    test_make_aimed_shot()
-    test_make_all_cards()
+    test_make_decks()

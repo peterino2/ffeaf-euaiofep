@@ -1,0 +1,5 @@
+
+next: 
+- card costs: 
+    - energy costs
+    - ap costs

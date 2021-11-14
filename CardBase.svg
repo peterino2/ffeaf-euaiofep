@@ -14,7 +14,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="CardBase.svg">
+   sodipodi:docname="CardBase.svg"
+   inkscape:export-filename="C:\Users\peter\bitmap.png"
+   inkscape:export-xdpi="95.122482"
+   inkscape:export-ydpi="95.122482">
   <defs
      id="defs2">
     <rect
@@ -50,9 +53,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0271188"
-     inkscape:cx="-4077.597"
-     inkscape:cy="-3053.2654"
+     inkscape:zoom="0.51355939"
+     inkscape:cx="-4397.2762"
+     inkscape:cy="-3080.9587"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -87,6 +90,16 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <path
+       style="fill:#478f8f;fill-opacity:1;stroke:#1e3236;stroke-width:0.89287;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -1191.6689,-979.73071 -4.4763,9.69574 6.1161,11.72455 -3.2477,-11.65001 z"
+       id="path3076-5-6-60"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#478f8f;fill-opacity:1;stroke:#1e3236;stroke-width:0.89287;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -1184.5158,-979.4559 -7.3329,9.68713 6.7224,10.90297 10.78,-8.73201 z"
+       id="path3078-8-6-6"
+       sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#b76b28;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m -1807.8264,-431.85805 -0.7427,58.1714 -2.8963,1.3286 c -23.7022,0.89401 -28.9551,7.86571 -38.4194,15.71313 12.5867,-2.50659 15.4449,-8.50352 47.2926,-2.13148 l 0.4169,-71.35379 z"
@@ -1876,43 +1889,24 @@
          sodipodi:nodetypes="ccccccccccccc" />
     </g>
     <g
-       id="g1547"
-       inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\CardBlank.png"
-       inkscape:export-xdpi="95.122482"
-       inkscape:export-ydpi="95.122482">
-      <rect
-         style="fill:#241f1c;fill-opacity:1;stroke:#aaaaaa;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="rect3488-6-2"
-         width="193.94821"
-         height="260.67715"
-         x="-1127.5614"
-         y="-946.22693" />
-      <rect
-         style="fill:#282828;fill-opacity:1;stroke:#5e5e5e;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:4.00441;stroke-opacity:1;paint-order:markers fill stroke"
-         id="rect4466-1-5-1-6"
-         width="176.96391"
-         height="87.270164"
-         x="-1119.0692"
-         y="-781.74585" />
-    </g>
-    <g
        id="g1530"
        inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\rogue_icon.png"
        inkscape:export-xdpi="95.122482"
        inkscape:export-ydpi="95.122482"
-       transform="matrix(0.87292166,0,0,0.92769334,-304.92629,-21.224023)">
+       transform="matrix(0.87292166,0,0,0.92769334,-304.92629,-21.224023)"
+       style="fill:#70a2ff;fill-opacity:1">
       <path
-         style="fill:#465b95;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#70a2ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
          d="m -888.64517,-430.99691 c -8.16015,4.37637 -12.62238,7.77584 -19.80519,11.84756 l -28.78386,28.94964 -1.30218,1.36458 -1.35789,0.93648 -20.46327,20.23023 1.42956,5.03442 5.72301,0.81807 3.60315,-3.98523 11.14665,-11.01966 2.25045,-1.95615 2.66007,-2.70261 0.99045,-1.11609 1.08642,-1.13307 3.32805,-3.45474 3.13938,1.50168 28.44666,-27.62925 c 0,0 6.60279,-12.40478 7.90854,-17.68586 z"
          id="path1914-0-2-13"
          sodipodi:nodetypes="cccccccccccccccccc" />
       <path
-         style="fill:#465b95;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#70a2ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
          d="m -935.44997,-396.23994 -16.30557,-15.69609 c -1.68153,-1.83165 -2.84436,-3.76935 -3.42321,-5.82639 -1.60431,-4.77342 -1.9833,-9.31338 -2.81214,-13.01496 l 6.02517,5.56911 c 4.73334,3.54066 7.25607,4.59705 9.94482,6.29526 2.14095,1.26 2.97177,0.45054 4.05738,0.0429 l 12.60249,12.43818 z"
          id="path1936-6-0"
          sodipodi:nodetypes="ccccccccc" />
       <path
-         style="fill:#465b95;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#70a2ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
          d="m -922.73243,-384.11556 0.70863,0.9882 3.30576,-1.37847 3.82809,4.15467 3.76119,3.49473 2.72496,2.50659 10.56465,10.44411 4.24092,3.9462 6.5805,-0.48477 1.75242,-6.03939 -20.75469,-20.6007 -1.49445,-0.90195 -5.1585,-5.30523 z"
          id="path1938-7-6"
          sodipodi:nodetypes="cccccccccccccc" />
@@ -2161,52 +2155,6 @@
          sodipodi:nodetypes="ccccccccccccc" />
     </g>
     <g
-       id="g1535-1"
-       inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\ranger_icon.png"
-       inkscape:export-xdpi="95.122482"
-       inkscape:export-ydpi="95.122482"
-       transform="matrix(0.96740776,0,0,0.97620539,-338.5305,-152.62618)"
-       style="opacity:0.387302">
-      <path
-         style="opacity:1;fill:#2f9522;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
-         d="m -740.87572,-366.66023 6.5679,0.33093 -0.165,6.70911 10.707,-9.21465 -1.3668,-4.08333 23.1591,-20.61717 26.3352,-22.81461 5.74986,-0.12688 7.34544,-12.96734 -14.3079,4.38099 -1.21131,5.76844 -25.18899,24.22649 -23.3724,20.27175 -3.8871,-1.34163 z"
-         id="path1618-1-1"
-         sodipodi:nodetypes="ccccccccccccccc" />
-      <path
-         style="opacity:1;fill:#2f9522;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
-         d="m -686.05612,-356.75408 -1.2186,1.31265 -37.3191,-6.13008 5.5332,-4.99866 34.2186,5.76762 c 1.8768,-2.0658 6.6264,-8.23722 8.646,-19.89789 0.8505,-12.89007 -2.2296,-15.99102 -4.4292,-20.70177 l 7.8693,-6.80262 c 2.2722,4.01733 4.1817,8.41008 5.0886,13.84056 0.273,3.93939 0.8814,5.81631 -0.8133,13.60251 -0.8763,3.2103 -1.4154,6.69663 -6.3045,13.60959 -5.9001,7.41654 -7.2144,7.27524 -9.9183,9.42435 z"
-         id="path1616-4-8-6"
-         sodipodi:nodetypes="ccccccccccccc" />
-      <path
-         style="opacity:1;fill:#2f9522;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
-         d="m -738.48052,-417.25856 -1.3755,1.16988 1.3944,37.79343 5.6541,-4.86141 -1.4241,-34.67196 c 2.2851,-1.6026 9.0042,-5.53929 20.826,-6.07851 12.8949,0.77529 15.5847,4.22031 19.9818,6.99414 l 7.737,-6.9525 c -3.7002,-2.75889 -7.8183,-5.205 -13.0917,-6.78675 -3.8739,-0.76545 -5.6598,-1.60482 -13.5969,-0.90159 -3.2952,0.46632 -6.8214,0.56313 -14.2938,4.54533 -8.0988,4.92201 -8.1237,6.24369 -10.5954,8.65605 z"
-         id="path1616-4-1-5-9"
-         sodipodi:nodetypes="ccccccccccccc" />
-    </g>
-    <g
-       id="g1530-8"
-       inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\rogue_icon.png"
-       inkscape:export-xdpi="95.122482"
-       inkscape:export-ydpi="95.122482"
-       transform="matrix(0.87292166,0,0,0.92769334,-296.90135,-168.1482)"
-       style="opacity:0.387302">
-      <path
-         style="fill:#465b95;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
-         d="m -888.64517,-430.99691 c -8.16015,4.37637 -12.62238,7.77584 -19.80519,11.84756 l -28.78386,28.94964 -1.30218,1.36458 -1.35789,0.93648 -20.46327,20.23023 1.42956,5.03442 5.72301,0.81807 3.60315,-3.98523 11.14665,-11.01966 2.25045,-1.95615 2.66007,-2.70261 0.99045,-1.11609 1.08642,-1.13307 3.32805,-3.45474 3.13938,1.50168 28.44666,-27.62925 c 0,0 6.60279,-12.40478 7.90854,-17.68586 z"
-         id="path1914-0-2-13-6"
-         sodipodi:nodetypes="cccccccccccccccccc" />
-      <path
-         style="fill:#465b95;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
-         d="m -935.44997,-396.23994 -16.30557,-15.69609 c -1.68153,-1.83165 -2.84436,-3.76935 -3.42321,-5.82639 -1.60431,-4.77342 -1.9833,-9.31338 -2.81214,-13.01496 l 6.02517,5.56911 c 4.73334,3.54066 7.25607,4.59705 9.94482,6.29526 2.14095,1.26 2.97177,0.45054 4.05738,0.0429 l 12.60249,12.43818 z"
-         id="path1936-6-0-0"
-         sodipodi:nodetypes="ccccccccc" />
-      <path
-         style="fill:#465b95;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
-         d="m -922.73243,-384.11556 0.70863,0.9882 3.30576,-1.37847 3.82809,4.15467 3.76119,3.49473 2.72496,2.50659 10.56465,10.44411 4.24092,3.9462 6.5805,-0.48477 1.75242,-6.03939 -20.75469,-20.6007 -1.49445,-0.90195 -5.1585,-5.30523 z"
-         id="path1938-7-6-8"
-         sodipodi:nodetypes="cccccccccccccc" />
-    </g>
-    <g
        id="g1605-7"
        transform="matrix(1.1094947,0,0,1.0646215,82.320812,-116.65887)"
        inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\tanky_icon.png"
@@ -2318,35 +2266,46 @@
          id="path2554-8-9-2-3-2-8-8"
          sodipodi:nodetypes="ccccccccccccc" />
     </g>
-    <path
-       style="fill:#478f8f;fill-opacity:1;stroke:#1e3236;stroke-width:1.23629;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -1155.1195,-935.30142 -7.2265,9.2765 15.439,16.23377 -7.2268,-15.94389 z"
-       id="path3076-5-6-60" />
-    <path
-       style="fill:#478f8f;fill-opacity:1;stroke:#1e3236;stroke-width:1.23629;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -1140.5523,-939.03282 -10.1043,13.1189 9.1749,15.16871 9.1749,-11.88897 z"
-       id="path3078-8-6-6" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.2492px;line-height:1.25;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a6f6ff;fill-opacity:1;stroke:#acfaff;stroke-width:0.83254;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="-1155.2466"
-       y="-917.49347"
-       id="text3082-1-5-6"
-       transform="scale(0.99935912,1.0006413)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.0525px;line-height:1.25;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffcb7e;fill-opacity:1;stroke:none;stroke-width:1.0029;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="-861.01019"
+       y="-980.51312"
+       id="text3082-0-7-2-5"
+       transform="scale(1.042512,0.95922157)"><tspan
          sodipodi:role="line"
-         id="tspan3080-8-8-2"
-         x="-1155.2466"
-         y="-917.49347"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.2492px;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a6f6ff;fill-opacity:1;stroke:#acfaff;stroke-width:0.83254;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">1</tspan><tspan
-         sodipodi:role="line"
-         x="-1155.2466"
-         y="-875.93195"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.2492px;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a6f6ff;fill-opacity:1;stroke:#acfaff;stroke-width:0.83254;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="tspan3220-4-1-4" /></text>
+         id="tspan3080-7-5-4-7"
+         x="-861.01019"
+         y="-980.51312"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.0525px;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffcb7e;fill-opacity:1;stroke:none;stroke-width:1.0029;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">2</tspan></text>
+    <g
+       id="g1547"
+       inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\CardBlank.png"
+       inkscape:export-xdpi="95.122482"
+       inkscape:export-ydpi="95.122482">
+      <rect
+         style="fill:#241f1c;fill-opacity:1;stroke:#aaaaaa;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="rect3488-6-2"
+         width="193.94821"
+         height="260.67715"
+         x="-1127.5614"
+         y="-946.22693" />
+      <rect
+         style="fill:#282828;fill-opacity:1;stroke:#5e5e5e;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:4.00441;stroke-opacity:1;paint-order:markers fill stroke"
+         id="rect4466-1-5-1-6"
+         width="176.96391"
+         height="87.270164"
+         x="-1119.0692"
+         y="-781.74585" />
+    </g>
+    <path
+       style="fill:#785f50;fill-opacity:0.882006;stroke:none;stroke-width:0.779423px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -1095.9935,-944.74332 v 56.56266 l -15.0365,16.16077 h -15.0365 v -72.72343 h 30.073"
+       id="path4287-1-4-04" />
     <path
        sodipodi:type="star"
        style="fill:#c87137;fill-opacity:1;stroke:#3f230c;stroke-width:0.353999;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:4.00441;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path3192-2-5-6"
+       id="path3192-2-5-4"
        sodipodi:sides="6"
        sodipodi:cx="90.487503"
        sodipodi:cy="-1.9347656"
@@ -2357,19 +2316,105 @@
        inkscape:flatsided="true"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       transform="matrix(5.343479,0,0,5.5927983,-1431.7179,-917.76982)"
+       transform="matrix(4.237616,0,0,3.9396079,-1495.2766,-891.28886)"
        d="m 92.769534,-0.59531245 -2.301016,1.30657047 -2.282031,-1.33945313 0.01899,-2.64602359 2.301016,-1.3065705 2.282031,1.3394532 z" />
+    <g
+       id="g1535-1"
+       inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\ranger_icon.png"
+       inkscape:export-xdpi="95.122482"
+       inkscape:export-ydpi="95.122482"
+       transform="matrix(0.70871734,0,0,0.75273111,-676.58054,-527.2948)"
+       style="opacity:0.387302">
+      <path
+         style="opacity:1;fill:#2f9522;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
+         d="m -740.87572,-366.66023 6.5679,0.33093 -0.165,6.70911 10.707,-9.21465 -1.3668,-4.08333 23.1591,-20.61717 26.3352,-22.81461 5.74986,-0.12688 7.34544,-12.96734 -14.3079,4.38099 -1.21131,5.76844 -25.18899,24.22649 -23.3724,20.27175 -3.8871,-1.34163 z"
+         id="path1618-1-1"
+         sodipodi:nodetypes="ccccccccccccccc" />
+      <path
+         style="opacity:1;fill:#2f9522;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
+         d="m -686.05612,-356.75408 -1.2186,1.31265 -37.3191,-6.13008 5.5332,-4.99866 34.2186,5.76762 c 1.8768,-2.0658 6.6264,-8.23722 8.646,-19.89789 0.8505,-12.89007 -2.2296,-15.99102 -4.4292,-20.70177 l 7.8693,-6.80262 c 2.2722,4.01733 4.1817,8.41008 5.0886,13.84056 0.273,3.93939 0.8814,5.81631 -0.8133,13.60251 -0.8763,3.2103 -1.4154,6.69663 -6.3045,13.60959 -5.9001,7.41654 -7.2144,7.27524 -9.9183,9.42435 z"
+         id="path1616-4-8-6"
+         sodipodi:nodetypes="ccccccccccccc" />
+      <path
+         style="opacity:1;fill:#2f9522;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
+         d="m -738.48052,-417.25856 -1.3755,1.16988 1.3944,37.79343 5.6541,-4.86141 -1.4241,-34.67196 c 2.2851,-1.6026 9.0042,-5.53929 20.826,-6.07851 12.8949,0.77529 15.5847,4.22031 19.9818,6.99414 l 7.737,-6.9525 c -3.7002,-2.75889 -7.8183,-5.205 -13.0917,-6.78675 -3.8739,-0.76545 -5.6598,-1.60482 -13.5969,-0.90159 -3.2952,0.46632 -6.8214,0.56313 -14.2938,4.54533 -8.0988,4.92201 -8.1237,6.24369 -10.5954,8.65605 z"
+         id="path1616-4-1-5-9"
+         sodipodi:nodetypes="ccccccccccccc" />
+    </g>
+    <g
+       id="g1530-8"
+       inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\rogue_icon.png"
+       inkscape:export-xdpi="95.122482"
+       inkscape:export-ydpi="95.122482"
+       transform="matrix(0.73192752,0,0,0.78768631,-513.35661,-437.71882)"
+       style="opacity:0.387302">
+      <path
+         style="fill:#465b95;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
+         d="m -888.64517,-430.99691 c -8.16015,4.37637 -12.62238,7.77584 -19.80519,11.84756 l -28.78386,28.94964 -1.30218,1.36458 -1.35789,0.93648 -20.46327,20.23023 1.42956,5.03442 5.72301,0.81807 3.60315,-3.98523 11.14665,-11.01966 2.25045,-1.95615 2.66007,-2.70261 0.99045,-1.11609 1.08642,-1.13307 3.32805,-3.45474 3.13938,1.50168 28.44666,-27.62925 c 0,0 6.60279,-12.40478 7.90854,-17.68586 z"
+         id="path1914-0-2-13-6"
+         sodipodi:nodetypes="cccccccccccccccccc" />
+      <path
+         style="fill:#465b95;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
+         d="m -935.44997,-396.23994 -16.30557,-15.69609 c -1.68153,-1.83165 -2.84436,-3.76935 -3.42321,-5.82639 -1.60431,-4.77342 -1.9833,-9.31338 -2.81214,-13.01496 l 6.02517,5.56911 c 4.73334,3.54066 7.25607,4.59705 9.94482,6.29526 2.14095,1.26 2.97177,0.45054 4.05738,0.0429 l 12.60249,12.43818 z"
+         id="path1936-6-0-0"
+         sodipodi:nodetypes="ccccccccc" />
+      <path
+         style="fill:#465b95;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1"
+         d="m -922.73243,-384.11556 0.70863,0.9882 3.30576,-1.37847 3.82809,4.15467 3.76119,3.49473 2.72496,2.50659 10.56465,10.44411 4.24092,3.9462 6.5805,-0.48477 1.75242,-6.03939 -20.75469,-20.6007 -1.49445,-0.90195 -5.1585,-5.30523 z"
+         id="path1938-7-6-8"
+         sodipodi:nodetypes="cccccccccccccc" />
+    </g>
+    <path
+       style="fill:#478f8f;fill-opacity:1;stroke:#1e3236;stroke-width:1.13148;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -1122.823,-929.3218 10.686,10.88876 11.6649,-10.5281 -10.9687,-11.97442 z"
+       id="path3078-8-6-6-1"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\peter\path3078-8-6-6-1.png"
+       inkscape:export-xdpi="95.122482"
+       inkscape:export-ydpi="95.122482" />
+    <circle
+       id="path2158"
+       style="fill:#96e42a;stroke:#000000;stroke-width:0.264583"
+       cx="-1061.4116"
+       cy="-925.6615"
+       r="0.032167502" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.0525px;line-height:1.25;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffcb7e;fill-opacity:1;stroke:none;stroke-width:1.0029;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="-918.69928"
-       y="-959.72662"
-       id="text3082-0-7-2-5"
-       transform="scale(1.042512,0.95922157)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9137px;line-height:1.25;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#bcf8ff;fill-opacity:1;stroke:none;stroke-width:0.648863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="-1005.6863"
+       y="-1026.7649"
+       id="text3082-1-5-6"
+       transform="scale(1.1107032,0.90033053)"><tspan
          sodipodi:role="line"
-         id="tspan3080-7-5-4-7"
-         x="-918.69928"
-         y="-959.72662"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.0525px;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffcb7e;fill-opacity:1;stroke:none;stroke-width:1.0029;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">2</tspan></text>
+         id="tspan3080-8-8-2"
+         x="-1005.6863"
+         y="-1026.7649"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9137px;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#bcf8ff;fill-opacity:1;stroke:none;stroke-width:0.648863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">1</tspan><tspan
+         sodipodi:role="line"
+         x="-1005.6863"
+         y="-994.37268"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9137px;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#bcf8ff;fill-opacity:1;stroke:none;stroke-width:0.648863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="tspan3220-4-1-4" /></text>
+    <g
+       id="g1547-8"
+       inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\CardBlank_nocost.png"
+       inkscape:export-xdpi="95.122482"
+       inkscape:export-ydpi="95.122482"
+       transform="translate(268.82884,47.525745)">
+      <rect
+         style="fill:#241f1c;fill-opacity:1;stroke:#aaaaaa;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="rect3488-6-2-4"
+         width="193.94821"
+         height="260.67715"
+         x="-1127.5614"
+         y="-946.22693" />
+      <rect
+         style="fill:#282828;fill-opacity:1;stroke:#5e5e5e;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:4.00441;stroke-opacity:1;paint-order:markers fill stroke"
+         id="rect4466-1-5-1-6-01"
+         width="176.96391"
+         height="87.270164"
+         x="-1119.0692"
+         y="-781.74585" />
+    </g>
   </g>
 </svg>
