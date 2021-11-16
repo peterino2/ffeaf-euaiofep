@@ -48,7 +48,6 @@ main_deckset.make_deck(
         ("Binding Shot", 4),
         ("Place Bomb", 4),
         ("Contraption: Bomb Trap", 1),
-        ("Status: Slowed", 1),
 ])
 
 main_deckset.make_deck(
@@ -57,7 +56,6 @@ main_deckset.make_deck(
         ("parting strike", 4),
         ("blur", 3),
         ("shuriken", 4),
-        ("blurry", 1),
 ])
 
 main_deckset.make_deck(
@@ -75,7 +73,15 @@ main_deckset.make_deck(
         ("shields up", 5),
         ("get behind me", 3),
         ("sunder arms", 3),
-        ("block", 1),
+])
+
+main_deckset.make_deck(
+"intrinsics", [
+    ('invoke wisdom', 1),
+    ('healing touch', 1),
+    ('bowshot', 1),
+    ('dash', 1),
+    ('slash', 1),
 ])
 
 main_deckset.join_decks("testing_deck", [

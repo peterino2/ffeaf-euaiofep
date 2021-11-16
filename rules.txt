@@ -32,6 +32,10 @@ during a players turn the following happens
         - defend; gain 2 block at the cost of 2 ap
         - activate character feature; pay the cost and activate their class feature.
         - play a card; activate the effect of a card in the hand by paying the cost associated with the card, and moving it to that character's discard pile.
+            - in addition to cards in your hand, you can also play intrinsic cards.
+            intrinsic cards can only be used once before recharging. Intrinsic cards recharge every turn, 
+            unless otherwise stated.
+
     - When no more actions can be taken or until the player chooses.
     - the character's turn ends. All cards in the hand are added to that character's discard pile.
     - the player then repeats this step until all characters have been activated.
@@ -39,10 +43,39 @@ during a players turn the following happens
 - when a character's hp hits zero, they are removed from the board.
 - The game ends when one team is completely wiped out.
 
+
+-------------- Card info ------------------
+
 Some Card terminology.
 
 Expend: This card is removed from play after usage
+Range X: this card can be targeted onto any character within X steps 
+Melee: this card must target someone directly adjacent
 Intrinsic: this card can be activated once per turn at any time and is always available.
 Exhaust: (Only for intrinsic cards), This intrinsic card is spent on usage, and will recharge itself when the deck is shuffled.
 Recharge X: (Only for intrinsic cards), This intrinsic card is spent on usage, and will recharge itself in X number of turns
+Cone X: this card hits all targets in a cone of height X in a target direction.
+
+Turning.
+
+After successfully spending ap to move, you can declare which direction your character is facing.
+After casting a targeted ability your character ends that action facing the target.
+You can rotate in place at any time during your turn by spending one ap.
+any time that is opposite your front and directly left or right of your front is considered the flank
+
+in a square grid:
+
+  xfx                   
+  xpx                   o = flank
+  ooo                   f = forward
+                        
+
+in a hex grid:
+
+      __f__
+     /     \
+    /   p   \       o = flank
+    \       /       f = forward
+   o \_____/ o
+        o
 

@@ -111,7 +111,7 @@ ranger_set.add_card(
     "Bowshot", # Intrinsic
     "Range 4: Deal 3 Damage\n\n(Intrinsic)"
     ,costs=(2,0)
-    ,tags=['attack.melee', 'backstab']
+    ,tags=['attack', 'melee', 'backstab']
 )
 
 ranger_set.add_card(
