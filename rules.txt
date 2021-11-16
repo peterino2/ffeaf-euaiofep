@@ -1,0 +1,48 @@
+welcome to emberlight
+
+Note. Emberlight is a turn based party based combat system meant to fulfill
+typical party combat mechanics in a high fantasy setting.
+
+
+The Emberlight Board game is what you're reading the rules for right now.
+as far as the board game goes, each game of emberlight involves one or more 
+players controlling the actions of all the player characters in the party.
+
+The game is played out on a grid system representing the battlefield.
+
+Victory is achieved when all enemies are defeated.
+
+The game is played with players of the party fighting against a game master. 
+
+OR 
+
+The game can be played in an adversarial Player-vs-player mode.
+
+
+Turn sequence:
+
+during a players turn the following happens
+
+- All characters on your team gain 6 AP and 4 Mana up to a maximum of 6 AP and 6 Mana
+- Player chooses a character to 'activate'
+    - The player draws 4 cards from that character's Ability Deck
+    - the character can perform the following actions as many times as they are able to and in any order.:
+        - move; spending 1 ap for each square they move
+        - basic attack; deal 2 damage at the cost of 2 ap
+        - defend; gain 2 block at the cost of 2 ap
+        - activate character feature; pay the cost and activate their class feature.
+        - play a card; activate the effect of a card in the hand by paying the cost associated with the card, and moving it to that character's discard pile.
+    - When no more actions can be taken or until the player chooses.
+    - the character's turn ends. All cards in the hand are added to that character's discard pile.
+    - the player then repeats this step until all characters have been activated.
+    - the next player/monsters then take their turn.
+- when a character's hp hits zero, they are removed from the board.
+- The game ends when one team is completely wiped out.
+
+Some Card terminology.
+
+Expend: This card is removed from play after usage
+Intrinsic: this card can be activated once per turn at any time and is always available.
+Exhaust: (Only for intrinsic cards), This intrinsic card is spent on usage, and will recharge itself when the deck is shuffled.
+Recharge X: (Only for intrinsic cards), This intrinsic card is spent on usage, and will recharge itself in X number of turns
+

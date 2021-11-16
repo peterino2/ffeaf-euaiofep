@@ -205,6 +205,7 @@ _aimed_shot_test_card = {
         "energy": 2,
         "ap": 2
     },
+    "tags": ['ranged', 'attack']
 }
 
 def test_make_single_deck():
