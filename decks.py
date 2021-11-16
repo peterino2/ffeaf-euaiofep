@@ -15,10 +15,16 @@ class DeckSet:
 
     def make_deck(self, deck_name, tuplist):
         deck_list = []
+        non_misc_count = 0
         for card_name, card_count in tuplist:
             card_info = cards.find_card(card_name)
+            if card_info['decks'][0] != 'misc':
+                non_misc_count  += card_count
             assert card_info is not None, f"unknown card {card_name}"
             deck_list.append((card_info, card_count))
+
+        if 'standard' in deck_name:
+            assert non_misc_count == 16, f'standard deck {deck_name} does not have 16 cards (has {non_misc_count})'
         
         self.decks[deck_name] = deck_list
 
@@ -37,7 +43,7 @@ main_deckset = DeckSet()
 
 main_deckset.make_deck(
     "standard_ranger",[ 
-        ("Sharp Shot", 5),
+        ("Sharp Shot", 6),
         ("First Aid", 2),
         ("Binding Shot", 4),
         ("Place Bomb", 4),
@@ -48,7 +54,7 @@ main_deckset.make_deck(
 main_deckset.make_deck(
     "standard_speedy",[ 
         ("aimed strike", 5),
-        ("parting strike", 3),
+        ("parting strike", 4),
         ("blur", 3),
         ("shuriken", 4),
         ("blurry", 1),
@@ -57,18 +63,18 @@ main_deckset.make_deck(
 main_deckset.make_deck(
     "standard_support",[ 
         ("energy bolt", 4),
-        ("mending bolt", 3),
+        ("mending bolt", 5),
         ("motivate", 3),
-        ("stamina surge", 4),
+        ("stamina surge", 2),
         ("hidden potential", 2),
 ])
 
 main_deckset.make_deck(
     "standard_tanky",[ 
         ("Heavy Strike", 5),
-        ("shields up", 3),
+        ("shields up", 5),
         ("get behind me", 3),
-        ("sunder arms", 4),
+        ("sunder arms", 3),
         ("block", 1),
 ])
 

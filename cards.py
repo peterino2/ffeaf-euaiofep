@@ -72,8 +72,8 @@ class CardSet:
             }
         if costs is not None:
             card_info["costs"]={
-                "energy": costs[0],
-                "ap": costs[1]
+                "ap": costs[0],
+                "energy": costs[1],
             }
         if flavour is not None:
             card_info['flavour'] = flavour
@@ -115,7 +115,7 @@ ranger_set.add_card(
 
 ranger_set.add_card(
     "First Aid!", 
-    "Range self: Heal for 3 + 1d3 health.",
+    "Technique: Heal for 3 + 1d3 health.",
     flavour="The first thing any ranger learns is how to take care of themself."
     ,costs=(3,1)
 )
@@ -148,6 +148,23 @@ misc_set.add_card(
     ,flavour="A bit of a lost art, making bombs. I wonder why they outlawed it."
 )
 
+crossbow_turret_damage = '2 + d4'
+cbt_range = '3'
+ranger_set.add_card(
+    "Place Crossbow Turret", 
+    f"Range 1: Place a {crossbow_turret_damage} damage [Crossbow Turret] into an empty square."
+    ,costs=(2,3)
+)
+
+ranger_set.add_card(
+    "Crossbow Turret Shot",
+    f"Range {cbt_range}: deal {crossbow_turret_damage}"
+)
+misc_set.add_card(
+    "Contraption: Crossbow Turret",
+    f"Once per turn this turret fires at an enemy within {cbt_range} range for {crossbow_turret_damage}."
+)
+
 # ==================================
 
 speedy_set.add_card(
@@ -167,7 +184,7 @@ speedy_set.add_card(
 
 speedy_set.add_card(
     "Blur",
-    "Gain 1 + 1d2 [Blur]",
+    "Gain 1 + 1d2 [Blurry]",
     flavour="Whoosh!"
     ,costs=(0,2)
 )
@@ -186,6 +203,18 @@ speedy_set.add_card(
     ,costs=(2,2)
 )
 
+speedy_set.add_card(
+    "Assassinate",
+    "Melee: Destroy all block, then deal 6+2d6. I must be flanking the target."
+    ,costs=(2,2)
+)
+
+speedy_set.add_card(
+    "Shadow break",
+    "Melee: deal 2 + 1d2 damage for each stack of [Blurry], lose all stacks of [Blurry]."
+    ,costs=(2,2)
+)
+
 # ----------- tanky cards ------------
 
 tanky_set.add_card(
@@ -196,37 +225,74 @@ tanky_set.add_card(
 )
 
 tanky_set.add_card(
-    "Shields Up!",
-    "Gain 4 + 1d4 block",
-    flavour="\"Bet you can't hurt me now bro!\" - local man, moments before disaster."
-    ,costs=(1,1)
-)
-
-tanky_set.add_card(
-    "Get behind me!",
-    "All allies in my flank,\ntake half damage for 1 turn.",
-    flavour="\"Aw geez, We better do what he says Rick.\""
-    ,costs=(1,2)
-)
-
-tanky_set.add_card(
     "Sunder arms",
     "Melee: Deal 2 damage, target has card draw reduced by 2 for the next turn.",
     flavour="This technique was developed in order to win arm wrestling competitions."
     ,costs=(2,2)
 )
 
+tanky_set.add_card(
+    "Shields Up!",
+    "Technique: Gain 4 + 1d4 block",
+    flavour="\"Bet you can't hurt me now bro!\" - local man, moments before disaster."
+    ,costs=(1,1)
+)
+
+tanky_set.add_card(
+    "Get behind me!",
+    "Battlecry: All allies in my flank,\ntake half damage for 1 turn.",
+    flavour="\"Aw geez, We better do what he says Rick.\""
+    ,costs=(1,2)
+)
+
+tanky_set.add_card(
+    "Rip and Tear",
+    "Battlecry (Expend): All my melee are replaced by [Rip].\nAll my technique cards are replaced by [Tear].",
+    flavour="The only thing they fear is you."
+    ,costs=(4,4)
+)
+
+tanky_set.add_card(
+    "Buff: Unbreakable",
+    "All incomming damage is reduced by 1",
+    "Automatically deal 1+d3 damage to any enemy that moves in an adjacent square.\nThis is lost if another stance card is played.",
+)
+
+tanky_set.add_card(
+    "Buff: Undeniable",
+    "Automatically deal 1+d3 damage to any enemy that moves in an adjacent square.\nThis is lost if another stance card is played.",
+)
+
+tanky_set.add_card(
+    "Tear",
+    "Melee: deal 6+1d6 damage."
+    ,costs=(3,2)
+)
+
+tanky_set.add_card(
+    "Rip",
+    "Melee: deal 1d6 damage twice."
+    ,costs=(3,2)
+)
+
+tanky_set.add_card(
+    "Champion's Stance",
+    "Stance (Expend): Gain [Unbreakable] and [Undeniable].",
+    flavour="This is the apex of what it means to become a warrior"
+    ,costs=(4,4)
+)
+
 misc_set.add_card(
     "Block",
     "Blocks damage, dissapears at the end of the turn.",
-    flavour="Can't hit what you can't hit."
+    flavour="Try me."
 )
 
 # ------------- Support cards --------------
 support_set.add_card(
     "Energy Bolt",
     "Ranged 3: Deal 1 + 1d3 damage",
-    flavour="This won't hurt a bit... no seriously this really wont hurt."
+    flavour="Quick as lightning"
     ,costs=(0,1)
 )
 
@@ -253,10 +319,18 @@ support_set.add_card(
 
 support_set.add_card(
     "Hidden potential",
-    "Range 3: target adds a new card to their deck from their class pool."
-    ,costs=(3,3)
+    "Range 3 (Expend): Target adds a new card that they're compatible with."
+    ,costs=(6, 5)
 )
 
+support_set.add_card(
+    "Circle of Healing",
+    "Radius 3: Heal all allies in radius for 2 + 1d4"
+    ,costs=(4,4)
+)
 
-
-
+support_set.add_card(
+    "Energy Aura",
+    "Spell (Expend): All allies gain an additional energy point per turn."
+    ,costs=(4,4)
+)

@@ -53,9 +53,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.51355939"
-     inkscape:cx="-4397.2762"
-     inkscape:cy="-3080.9587"
+     inkscape:zoom="1.0271188"
+     inkscape:cx="-3996.8746"
+     inkscape:cy="-2888.6691"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -69,7 +69,8 @@
      inkscape:snap-center="true"
      inkscape:snap-grids="false"
      inkscape:snap-to-guides="false"
-     inkscape:snap-others="false">
+     inkscape:snap-others="true"
+     inkscape:snap-object-midpoints="true">
     <inkscape:grid
        type="xygrid"
        id="grid20" />
@@ -2395,26 +2396,54 @@
          y="-994.37268"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9137px;font-family:'Sitka Banner';-inkscape-font-specification:'Sitka Banner, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#bcf8ff;fill-opacity:1;stroke:none;stroke-width:0.648863;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="tspan3220-4-1-4" /></text>
+    <rect
+       style="fill:#241f1c;fill-opacity:1;stroke:#aaaaaa;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect3488-6-2-4"
+       width="193.94821"
+       height="260.67715"
+       x="-858.73254"
+       y="-898.70117" />
     <g
-       id="g1547-8"
-       inkscape:export-filename="D:\sync\Sync\Emberlight\cardmaker\cardblanks\CardBlank_nocost.png"
-       inkscape:export-xdpi="95.122482"
-       inkscape:export-ydpi="95.122482"
-       transform="translate(268.82884,47.525745)">
-      <rect
-         style="fill:#241f1c;fill-opacity:1;stroke:#aaaaaa;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="rect3488-6-2-4"
-         width="193.94821"
-         height="260.67715"
-         x="-1127.5614"
-         y="-946.22693" />
+       id="g2237">
       <rect
          style="fill:#282828;fill-opacity:1;stroke:#5e5e5e;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:4.00441;stroke-opacity:1;paint-order:markers fill stroke"
          id="rect4466-1-5-1-6-01"
          width="176.96391"
          height="87.270164"
-         x="-1119.0692"
-         y="-781.74585" />
+         x="-850.24036"
+         y="-734.22009" />
+      <rect
+         style="fill:#282828;fill-opacity:1;stroke:#5e5e5e;stroke-width:0.575441;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:4.00441;stroke-opacity:1;paint-order:markers fill stroke"
+         id="rect4466-1-5-1-6-01-6"
+         width="79.784004"
+         height="7.1218891"
+         x="-801.65045"
+         y="-651.09839" />
+    </g>
+    <rect
+       style="fill:#282828;fill-opacity:1;stroke:#5e5e5e;stroke-width:0.575441;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:4.00441;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect4466-1-5-1-6-01-6-2"
+       width="79.784004"
+       height="7.1218891"
+       x="-1070.4792"
+       y="-741.67169" />
+    <g
+       id="g2237-5"
+       transform="translate(-268.82886,-47.525757)">
+      <rect
+         style="fill:#282828;fill-opacity:1;stroke:#5e5e5e;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:4.00441;stroke-opacity:1;paint-order:markers fill stroke"
+         id="rect4466-1-5-1-6-01-8"
+         width="176.96391"
+         height="87.270164"
+         x="-850.24036"
+         y="-734.22009" />
+      <rect
+         style="fill:#282828;fill-opacity:1;stroke:#5e5e5e;stroke-width:0.575441;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;stroke-dashoffset:4.00441;stroke-opacity:1;paint-order:markers fill stroke"
+         id="rect4466-1-5-1-6-01-6-1"
+         width="79.784004"
+         height="7.1218891"
+         x="-801.65045"
+         y="-651.09839" />
     </g>
   </g>
 </svg>
