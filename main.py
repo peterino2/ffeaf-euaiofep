@@ -235,4 +235,5 @@ def test_make_playtest_deck():
     maker.make_deck(decks.main_deckset.decks['testing_deck'], 'testing_deck', 'playtest_decks')
 
 if __name__ == "__main__":
+    test_make_all_cards()
     test_make_decks()
