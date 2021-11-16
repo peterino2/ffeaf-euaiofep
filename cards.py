@@ -339,6 +339,13 @@ support_set.add_card(
 )
 
 support_set.add_card(
+    "Healing Touch", # Intrinsic
+    "Range 1: Heal target for 4 hp.\n\n (Intrinsic, Exhaust)" 
+    ,costs=(2,2) 
+    ,tags=['touch', 'spell', 'heal']
+)
+
+support_set.add_card(
     "Energy Bolt",
     "Ranged 3: Deal 3 damage",
     flavour="Quick as lightning"
