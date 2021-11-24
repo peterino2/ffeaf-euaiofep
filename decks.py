@@ -18,6 +18,7 @@ class DeckSet:
         non_misc_count = 0
         for card_name, card_count in tuplist:
             card_info = cards.find_card(card_name)
+            print(card_info['decks'])
             if card_info['decks'][0] != 'misc':
                 non_misc_count  += card_count
             assert card_info is not None, f"unknown card {card_name}"
@@ -51,9 +52,9 @@ main_deckset.make_deck(
 ])
 
 main_deckset.make_deck(
-    "standard_speedy",[ 
+    "standard_speedy", [ 
         ("aimed strike", 5),
-        ("parting strike", 4),
+        ("Flash of steel", 4),
         ("blur", 3),
         ("shuriken", 4),
 ])
@@ -83,6 +84,35 @@ main_deckset.make_deck(
     ('dash', 1),
     ('slash', 1),
 ])
+
+main_deckset.make_deck(
+    "biter_medium", [
+        ('claw', 4),
+        ('bite', 2),
+        ('pounce',  2)
+    ]
+)
+
+main_deckset.make_deck(
+    "goblin_slinger", [
+        ('slingshot', 6),
+        ('dirty fighting',  2)
+    ]
+)
+
+main_deckset.make_deck(
+    "goblin", [
+        ('goblin sword', 6),
+        ('dirty fighting',  2)
+    ]
+)
+
+main_deckset.make_deck(
+    "biter_small", [
+        ('small bite', 6),
+        ('small leap',  2)
+    ]
+)
 
 main_deckset.join_decks("testing_deck", [
     "standard_ranger",

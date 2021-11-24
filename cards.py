@@ -99,6 +99,8 @@ def find_card(card_name):
         if card_name.lower() in card_info['name'].lower():
             print(f"!!WARNING!! looking for {card_name}, fuzzy matched to {card_info['name']}")
             return card_info
+
+    print(f"!!WARNING!! looking for {card_name}, Unable to find card")
     return None
 
 ranger_set = CardSet('ranger')
@@ -156,7 +158,7 @@ ranger_set.add_card(
 
 misc_set.add_card(
     "Contraption: Bomb Trap",
-    "Detonates when an enemy steps onto this square or an adjacent square."
+    "Detonates when an enemy steps onto this square, or when destroyed (1Hp)"
     f"\n\nDeals {bomb_trap_dmg} damage to all characters in range.\nAllies take half damage."
     ,flavour="A bit of a lost art, making bombs. I wonder why they outlawed it."
     ,tags=['minion', 'immobile']
@@ -182,13 +184,53 @@ misc_set.add_card(
     ,tags=['ranged_attacker', 'minion']
 )
 
+ranger_set.add_card(
+    "Bouncing shot",
+    f"Range 5: Deal 3 damage to a target and it's nearest ally"
+    ,costs=(2,2)
+    ,tags=['ranged', 'attack', 'projectile']
+)
+
+ranger_set.add_card(
+    "Volley shot",
+    f"Range 4: Deal 2 damage to a square and all adjacent squares"
+    ,costs=(2, 2)
+    ,tags=['ranged', 'attack', 'projectile']
+)
+
+ranger_set.add_card(
+    "Barrage",
+    f"Range 3: Deal 1 damage to a target 4 times"
+    ,costs=(3, 3)
+    ,tags=['ranged', 'attack', 'projectile']
+)
+
+ranger_set.add_card(
+    "Shatter Shot",
+    f"Range 5: Deal 1 damage to a target, that target is [Vulnerable] for 1 turn."
+    ,costs=(3, 3)
+    ,tags=['ranged', 'attack', 'projectile']
+)
+
 # ==================================
 
 speedy_set.add_card(
     "Dash", # Intrinsic
-    "Technique: Move 4\n\n(Intrinsic, Exhaust)"
+    "Technique: Move 4\n\n(Intrinsic)"
     ,costs=(2,0)
     ,tags=['attack.melee', 'backstab']
+)
+
+speedy_set.add_card(
+    "Adrenaline", # Intrinsic
+    "Technique: Gain 2 energy. \n\n(Intrinsic, Exhaust)"
+    ,tags=['passive']
+)
+
+speedy_set.add_card(
+    "Deft Hands", # Intrinsic
+    "Passive: This character's attacks will prevent enemy bombs from detonating.\n\n(Intrinsic)"
+    ,tags=['passive']
 )
 
 speedy_set.add_card(
@@ -201,10 +243,10 @@ speedy_set.add_card(
 )
 
 speedy_set.add_card(
-    "Parting Strike",
-    "Melee: Deal 3 damage, Move 2"
+    "Flash of steel",
+    "Melee: Deal 3 damage and Move 2, resolve these in any order"
     ,flavour="Strike! then vanish."
-    ,costs=(2,2)
+    ,costs=(0,2)
     ,tags=['attack', 'melee', 'movement']
 )
 
@@ -225,8 +267,8 @@ misc_set.add_card(
 
 speedy_set.add_card(
     "Shuriken",
-    "Range 2: Deal 3 damage, deal an extra 2 if attacking "
-    "from the flank",
+    "Range 2: Deal 3 damage, deal an extra 2 if attacking"
+    " from the flank",
     flavour="It's not always a throwing star. Sometimes it's sharp rocks, or a bucket."
     ,costs=(2,2)
     ,tags=['attack', 'range', 'backstab']
@@ -246,6 +288,20 @@ speedy_set.add_card(
     ,tags=['attack', 'melee']
 )
 
+speedy_set.add_card(
+    "Trip",
+    "Melee: deal 2 damage, target starts with 3 AP next turn."
+    ,costs=(2,2)
+    ,tags=['attack', 'melee']
+)
+
+speedy_set.add_card(
+    "Pocket Sand",
+    "Range 1: Target suffers from [Partial Blindness] for their next turn."
+    ,costs=(1,1)
+    ,tags=['malignant', 'melee']
+)
+
 # ----------- tanky cards ------------
 
 tanky_set.add_card(
@@ -256,8 +312,22 @@ tanky_set.add_card(
 )
 
 tanky_set.add_card(
+    "Trust the armor", # Intrinsic for tanky
+    "Technique: Gain 2 block\n\n(Intrinsic)"
+    ,costs=(2,0)
+    ,tags=['attack', 'melee']
+)
+
+tanky_set.add_card(
+    "Bulwark", # Intrinsic for tanky
+    "Reaction: When a negative effect is applied to this target, negate it's effects and clear it. \n\n(Intrinsic, Expend)"
+    ,costs=(2,0)
+    ,tags=['attack', 'melee']
+)
+
+tanky_set.add_card(
     "Heavy Strike",
-    "Melee: Deal 6 damage, deal an extra 2 damage if they have block.",
+    "Melee: Deal 5 damage, deal an extra 2 damage if they have block.",
     flavour="\"SMASH!\"- some green dude once."
     ,costs=(2,2)
     ,tags=['attack.melee']
@@ -268,6 +338,13 @@ tanky_set.add_card(
     "Melee: Deal 2 damage, target has card draw reduced by 1 for the next turn.",
     flavour="This technique was developed in order to win arm wrestling competitions."
     ,costs=(2,2)
+    ,tags=['attack.melee', 'malignant']
+)
+
+tanky_set.add_card(
+    "Blitz and assault",
+    "Melee: Deal 2 damage twice. Target loses 1 energy"
+    ,costs=(3,3)
     ,tags=['attack.melee', 'malignant']
 )
 
@@ -288,31 +365,44 @@ tanky_set.add_card(
 )
 
 tanky_set.add_card(
-    "Slayer's Soul",
-    "Battlecry: Replace one of my Intrinsic cards with [Rip and tear] \n\n(Expend)",
+    "Rallying Cry",
+    "Battlecry: All Allies gain 1 health, and 1 [Empowered]."
+    ,costs=(1,1)
+    ,tags=['technique', 'battlecry', 'support', 'aoe']
+)
+
+tanky_set.add_card(
+    "Buff: Empowered",
+    "Each instance of empowered is consumed to increase one instance of damage by 1."
+    ,tags=['technique', 'battlecry', 'support', 'aoe', 'protect']
+)
+
+tanky_set.add_card(
+    "Slayer's Cry",
+    "Battlecry: Replace one of my Intrinsic Melee cards with [Rip and tear] \n\n(Expend)",
     flavour="The only thing they fear is you."
     ,costs=(4,4)
     ,tags=['technique', 'battlecry']
 )
+
 tanky_set.add_card(
     "Rip and Tear",
-    "Melee: Deal 4 damage twice."
-    ,costs=(2, 1)
+    "Melee: Deal 3 damage twice."
+    ,costs=(2, 0)
     ,tags=['melee', 'attack']
 )
 
 tanky_set.add_card(
     "Buff: Undeniable",
-    "Automatically deal 3 damage to any enemy that moves in an adjacent square. Nearby enemies must spend an extra AP to start their normal movement."
+    "Automatically deal 2 damage to any enemy that begins movement in an adjacent square."
     ,tags=['buff', 'attack', 'melee', 'stance']
 )
 
 tanky_set.add_card(
     "Buff: Unbreakable",
-    "Reduce all incoming damage by 1."
+    "Gain 2 block at the start of every turn 1."
     ,tags=['buff', 'attack', 'melee', 'stance']
 )
-
 
 tanky_set.add_card(
     "Champion's Stance",
@@ -333,15 +423,22 @@ misc_set.add_card(
 
 support_set.add_card(
     "Invoke wisdom", # Intrinsic
-    "Place one card from your hand to the top of your deck.\n\n (Intrinsic, Exhaust)" 
-    ,costs=(2,2) 
+    "Retain one card in your hand for next turn.\n\n (Intrinsic, Exhaust)" 
+    ,costs=(2, 0) 
     ,tags=['technique']
 )
 
 support_set.add_card(
     "Healing Touch", # Intrinsic
     "Range 1: Heal target for 4 hp.\n\n (Intrinsic, Exhaust)" 
-    ,costs=(2,2) 
+    ,costs=(2, 0) 
+    ,tags=['touch', 'spell', 'heal']
+)
+
+support_set.add_card(
+    "Guarding Touch", # Intrinsic
+    "Range 2: Target gains 2 block.\n\n (Intrinsic)" 
+    ,costs=(2, 0) 
     ,tags=['touch', 'spell', 'heal']
 )
 
@@ -365,7 +462,7 @@ support_set.add_card(
     "Motivate",
     "Ranged 2: Target's next activation will draw 2 extra cards.",
     flavour="You can do it!"
-    ,costs=(3,3)
+    ,costs=(1,1)
     ,tags=['spell', 'beneficial']
 )
 
@@ -373,14 +470,14 @@ support_set.add_card(
     "Stamina Surge",
     "Range 3: Target starts their next turn with 8 AP.",
     flavour="\"Oh my god he just ran right in.\"- local man, moments before disaster."
-    ,costs=(2,2)
+    ,costs=(1,1)
     ,tags=['spell', 'beneficial']
 )
 
 support_set.add_card(
     "Hidden potential",
     "Range 3 (Expend): Target adds a new card that they're compatible with."
-    ,costs=(6, 5)
+    ,costs=(4, 4)
     ,tags=['spell', 'beneficial']
 )
 
@@ -393,8 +490,74 @@ support_set.add_card(
 
 support_set.add_card(
     "Energy Aura",
-    "Spell (Expend):While the caster is alive, all allies gain an additional energy point per turn."
-    ,costs=(6,6)
+    "Spell (Expend): While the caster is alive, all allies gain an additional energy point per turn."
+    ,costs=(3,3)
     ,tags=['spell', 'beneficial', 'global', 'aura']
 )
+
+# ===================== npc abilities
+
+misc_set.add_card(
+    "Claw",
+    "Melee: deal 3 damage twice."
+    ,costs=(2, 2)
+    ,tags=[]
+)
+
+misc_set.add_card(
+    "Bite",
+    "Melee: deal 4 damage, deal 1 extra if they don't have block"
+    ,costs=(2, 2)
+    ,tags=[]
+)
+
+misc_set.add_card(
+    "Pounce",
+    "Range 2: jump to an unoccupied square."
+    ,costs=(1, 1)
+    ,tags=[]
+)
+
+misc_set.add_card(
+    "pounce",
+    "Range 3: jump to an unoccupied square."
+    ,costs=(1, 1)
+    ,tags=[]
+)
+
+misc_set.add_card(
+    "Slingshot",
+    "Range 3: Deal 3 damage."
+    ,costs=(2, 2)
+    ,tags=[]
+)
+
+misc_set.add_card(
+    "Dirty Fighting",
+    "Melee: Target draws 1 less card next turn."
+    ,costs=(2, 2)
+    ,tags=[]
+)
+
+misc_set.add_card(
+    "Goblin Sword",
+    "Melee: Deal 3 damage."
+    ,costs=(2, 2)
+    ,tags=[]
+)
+
+misc_set.add_card(
+    "Small Bite",
+    "Melee: Deal 1 damage."
+    ,costs=(1, 0)
+    ,tags=[]
+)
+
+misc_set.add_card(
+    "Small Leap",
+    "Range 2: jump to an unoccupied square"
+    ,costs=(2, 0)
+    ,tags=[]
+)
+
 

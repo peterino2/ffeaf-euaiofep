@@ -173,6 +173,10 @@ class CardMaker:
 
     def make_deck_texture(self, deck_list, deck_name, dimensions):
 
+        if (len(deck_list) > 69):
+            print("!!! Uh oh this deck has too many cards")
+            return 
+
         base_image = Image.open(cardbase)
 
         card_width, card_height = base_image.size
